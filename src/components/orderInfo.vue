@@ -6,7 +6,7 @@ const searchKeyword = ref('')
 const selectedOption = ref('') // 추가: 선택된 옵션을 저장할 변수
 
 async function fetchData() {
-    const response = await fetch("https://r1-json-server.fly.dev/db");
+    const response = await fetch("http://localhost:8888/db");
     jsonData.value = await response.json();
 }
 
