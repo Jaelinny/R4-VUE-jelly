@@ -31,13 +31,13 @@ const filteredPosts = ref([]); // 출력 값 담을 그릇
 async function fetchData() {
     posts.value = null
         const res = await fetch(
-                `https://r1-json-server.fly.dev/pack`
+                `https://localhost:8888/pack`
                 )
         posts.value = await res.json()
 }
 
 // const fetchData = async () => {
-//   const response = await axios.get(`https://palworld-json-server.fly.dev/posts`);
+//   const response = await axios.get(`https://palworld-json-server/posts`);
 //   posts.value = response.data;
 // };
 
